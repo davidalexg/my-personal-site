@@ -3,49 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - David Ahumada</title>
+    <title>Publications - David Guecha Ahumada</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
-            color: #2d3436;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        section {
-            padding: 50px 20px;
-            background-color: #e3eaf0;
-            border-radius: 15px;
-            margin: 20px auto;
-            max-width: 800px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        a {
-            color: #5d6d7e;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer {
-            background-color: #b2bec3;
-            padding: 10px;
-            width: 100%;
-            color: white;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>Publications</h1>
+        <h1>David Guecha Ahumada</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projects.html">Class Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section>
-        <h2>Title of Your Paper</h2>
-        <p>Short abstract or description of your paper.</p>
-        <p><a href="link-to-your-paper.pdf" target="_blank">Download Paper</a></p>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication">
+            <h3><a href="https://arxiv.org/abs/2407.08008" target="_blank">DS@GT eRisk 2024: Sentence Transformers for Social Media Risk Assessment</a></h3>
+            <p><strong>Authors:</strong> David Guecha, Aaryan Potdar, Anthony Miyaguchi</p>
+            <p><strong>Abstract:</strong>
+                We present working notes for DS@GT team in the eRisk 2024 for Tasks 1 and 3. We propose a ranking system for Task 1 that predicts symptoms of depression based on the Beck Depression Inventory (BDI-II) questionnaire using binary classifiers trained on question relevancy as a proxy for ranking. We find that binary classifiers are not well calibrated for ranking, and perform poorly during evaluation. For Task 3, we use embeddings from BERT to predict the severity of eating disorder symptoms based on user post history. We find that classical machine learning models perform well on the task, and end up competitive with the baseline models. Representation of text data is crucial in both tasks, and we find that sentence transformers are a powerful tool for downstream modeling.<p>
+                <a href="https://arxiv.org/abs/2407.08008" target="_blank">[View Paper]</a></p>
+        </div>
     </section>
-    
+
     <footer>
         <p>&copy; 2025 David Ahumada</p>
     </footer>
