@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{Page Title}}</title>
+    <title>Class Projects - David Guecha Ahumada</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #4a69bd;
-        }
-        p {
-            color: #555;
-        }
-    </style>
 </head>
 <body>
+    <header>
+        <h1>David Guecha Ahumada</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="research.html">Research</a></li> -->
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projects.html">Class Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="container">
-        <h1>{{Page Title}}</h1>
-        <p>This page is under construction! 🚧 Check back later.</p>
-    </div>
+    <section class="project">
+        <h2>Knowledge-Based AI Agent for Raven’s Progressive Matrices (RPM)</h2>
+        <p><strong>Course:</strong> CS7637 Knowledge-Based AI (Georgia Tech)</p>
+        <p><strong>Description:</strong> Developed an intelligent agent capable of solving Raven’s Progressive Matrices (RPM) problems using Knowledge-Based AI techniques. The agent converts images to black-and-white NumPy arrays and applies various strategies, including affine transformations, dark pixel ratio comparisons, bitwise transformations, and heuristic approaches like discard-and-choose. The agent achieved a performance score of 78.13% on standard RPM problems.</p>
+        <p><strong>Key Strategies Used:</strong></p>
+        <ul>
+            <li>Affine transformations (for 2x2 matrices)</li>
+            <li>Dark Pixel Ratio (DPR) comparison</li>
+            <li>Bitwise transformations (for 3x3 matrices)</li>
+            <li>Heuristic "Discard and Choose" strategy</li>
+        </ul>
+        <p><strong>Outcome:</strong> Successfully solved 75 out of 96 problems on the Gradescope platform, demonstrating effective AI problem-solving strategies aligned with human analogical reasoning.</p>
+    </section>
 
+    <footer>
+        <p>&copy; David Guecha Ahumada</p>
+    </footer>
 </body>
 </html>
